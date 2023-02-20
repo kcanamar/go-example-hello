@@ -28,7 +28,7 @@ func main() {
 	// message := greetings.Hello("Kyle")
 
 	//? Request a greeting message
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Kyle")
 
 	// If an error was returned, print it to the console and exit program with log packages Fatal function
 	if err != nil {
