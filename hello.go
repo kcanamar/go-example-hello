@@ -28,7 +28,13 @@ func main() {
 	// message := greetings.Hello("Kyle")
 
 	//? Request a greeting message
-	message, err := greetings.Hello("Kyle")
+	// message, err := greetings.Hello("Kyle")
+
+	// A Slice of names
+	names := []string{"Kyle", "Jaime", "Bodhi", "PJ", "Braiden"}
+
+	// Request the greeting messages for names
+	messages, err := greetings.Hellos(names)
 
 	// If an error was returned, print it to the console and exit program with log packages Fatal function
 	if err != nil {
@@ -37,5 +43,8 @@ func main() {
 
 	//! If no error was returned 
 	// print the message to the console
-	fmt.Println(message)
+	// fmt.Println(message)
+
+	// print the reutrned map of messages to the console
+	fmt.Println(messages)
 }
